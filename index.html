@@ -16,18 +16,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header" data-stuck="false">
     <a class="brand" href="#home" aria-label="Kyle Turchick home">
       <span class="brand-mark" aria-hidden="true">KT</span>
       <span class="brand-text">Kyle Turchick</span>
     </a>
+
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
-      <a href="#products">Products</a>
+      <a href="#outputs">Outputs</a>
+      <a href="#methods">Methods</a>
       <a href="#experience">Experience</a>
       <a href="#teaching">Teaching</a>
       <a href="#contact">Contact</a>
@@ -39,22 +45,26 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Ph.D. Candidate · Cornell University · Natural Resources</p>
-          <h1>Disturbance ecology, renewable-energy landscapes, and the biodiversity hidden in environmental heterogeneity.</h1>
-          <p class="lede">I study how disturbance, geodiversity, and land-use change shape biodiversity, vegetation structure, soil-surface conditions, and carbon dynamics across Mojave Desert, western U.S., and temperate rainforest systems.</p>
+          <h1>Studying how disturbance and environmental heterogeneity shape biodiversity across public lands and renewable-energy landscapes.</h1>
+          <p class="lede">I combine field ecology, geospatial analysis, federal monitoring datasets, and statistical modeling to understand how ecosystems respond to disturbance, from Mojave Desert solar facilities to western U.S. public lands and southeast Alaska temperate rainforests.</p>
+
           <div class="hero-actions">
             <a class="button primary" href="#research">Explore research</a>
             <a class="button secondary" href="#contact">Contact</a>
           </div>
+
           <ul class="quick-facts" aria-label="Quick facts">
-            <li><strong>Affiliation:</strong> USGS New York Cooperative Fish & Wildlife Research Unit</li>
+            <li><strong>Affiliation:</strong> USGS New York Cooperative Fish &amp; Wildlife Research Unit</li>
             <li><strong>Research home:</strong> Renewable Energy Ecology Lab</li>
             <li><strong>Methods:</strong> Field ecology, GIS, R, large monitoring datasets</li>
           </ul>
         </div>
+
         <aside class="hero-card" aria-label="Research summary">
           <p class="card-kicker">Research orbit</p>
           <h2>Ecological theory with mud on its boots.</h2>
-          <p>My work connects heterogeneity-diversity theory with public-land monitoring, technical reporting, and applied renewable-energy questions.</p>
+          <p>My work links biodiversity theory with the practical demands of public-land monitoring, renewable-energy development, restoration, and long-term ecological change.</p>
+
           <div class="metric-stack">
             <div><span>2022-2024</span><small>Yellow Pine monitoring data</small></div>
             <div><span>BLM + USGS</span><small>agency-facing research products</small></div>
@@ -64,23 +74,34 @@
       </div>
     </section>
 
+    <section id="about" class="section-pad">
+      <div class="section-heading narrow">
+        <p class="eyebrow">About</p>
+        <h2>I work at the boundary between ecological theory and land-management decisions.</h2>
+        <p>I am a Ph.D. candidate in Natural Resources at Cornell University and a member of the USGS New York Cooperative Fish &amp; Wildlife Research Unit. My research asks how disturbance and environmental heterogeneity shape biodiversity, vegetation structure, soil-surface conditions, and carbon dynamics. I am especially interested in research that can inform public-land management, renewable-energy development, restoration, and conservation under changing disturbance regimes.</p>
+      </div>
+    </section>
+
     <section id="research" class="section-pad band">
       <div class="section-heading">
         <p class="eyebrow">Research program</p>
         <h2>Three research lines, one ecological question: how does variation become biodiversity?</h2>
       </div>
+
       <div class="cards three">
         <article class="card">
           <h3>Heterogeneity-diversity theory</h3>
-          <p>I test how abiotic environmental variation influences plant and bird richness across local to continental scales, including whether biodiversity responses are linear, saturating, or unimodal.</p>
+          <p>I test how environmental heterogeneity and geodiversity influence plant and bird richness across spatial scales, and whether biodiversity responses are linear, saturating, or unimodal.</p>
         </article>
+
         <article class="card">
           <h3>Renewable-energy ecology</h3>
-          <p>I evaluate how utility-scale solar development alters desert vegetation, soil-surface conditions, biological soil crust, woody debris, burrows, plant-community structure, and geodiversity.</p>
+          <p>I evaluate how utility-scale solar development changes desert vegetation, soil-surface structure, biological soil crust, woody debris, burrow activity, plant communities, and geodiversity.</p>
         </article>
+
         <article class="card">
           <h3>Disturbance and recovery</h3>
-          <p>I study how landslides, wildfire, windstorms, mechanical vegetation treatments, and solar-facility construction reorganize biomass, carbon, vegetation structure, and biodiversity.</p>
+          <p>I study how landslides, wildfire, windstorms, mechanical treatments, and solar-facility construction reorganize vegetation, biodiversity, soil conditions, and carbon stocks.</p>
         </article>
       </div>
     </section>
@@ -89,113 +110,64 @@
       <div class="section-heading narrow">
         <p class="eyebrow">Featured projects</p>
         <h2>Field systems as living instruments.</h2>
-        <p>The work spans public-land monitoring networks, desert solar landscapes, and disturbance-carbon gradients. Each project is designed to move from field evidence to applied ecological inference.</p>
+        <p>My projects combine field data, public-land monitoring, geospatial synthesis, and ecological theory across desert, temperate rainforest, and western U.S. public-land systems.</p>
       </div>
-      <div class="project-list">
-        <article class="project-card">
-          <div class="project-number">01</div>
-          <div>
-            <h3>Yellow Pine Solar Facility ecological monitoring</h3>
-            <p class="meta">Mojave Desert, Nevada · Bureau of Land Management Las Vegas Field Office · 2022-2024</p>
-            <p>Permanent transects compare utility-scale solar-facility disturbance, undisturbed controls, and a debris-flow/landslide reference system. The dataset tracks perennial and annual vegetation, species richness, biological soil crust, woody debris, burrows, surface rock cover, landforms, slope shape, and photovoltaic-panel microsites.</p>
-          </div>
+
+      <div class="cards three">
+        <article class="card">
+          <h3>Yellow Pine Solar Facility ecological monitoring</h3>
+          <p>Permanent-transect monitoring in the Mojave Desert comparing utility-scale solar-facility disturbance, undisturbed controls, and a landslide/debris-flow reference system.</p>
+          <p>The project quantifies perennial and annual vegetation, species richness, biological soil crust, woody debris, burrows, rock cover, landforms, slope shape, geodiversity, and photovoltaic-panel microsites.</p>
+          <p>The work helps evaluate how lower-disturbance solar-site preparation and panel microsites affect ecological recovery in arid public-land systems.</p>
         </article>
-        <article class="project-card">
-          <div class="project-number">02</div>
-          <div>
-            <h3>Western U.S. geodiversity-biodiversity synthesis</h3>
-            <p class="meta">BLM monitoring networks · eBird/species-richness data · ecoregion frameworks</p>
-            <p>This work integrates federal vegetation and soil monitoring data, bird richness estimates, geodiversity metrics, and ecoregional frameworks to evaluate scale-dependent plant and bird biodiversity patterns across public lands.</p>
-          </div>
+
+        <article class="card">
+          <h3>Western U.S. geodiversity-biodiversity synthesis</h3>
+          <p>This project integrates federal vegetation and soil monitoring data, bird richness estimates, geodiversity metrics, geologic and edaphic variables, and ecoregion frameworks across western U.S. public lands.</p>
+          <p>The goal is to test whether abiotic heterogeneity can help explain biodiversity patterns across management-relevant ecological scales.</p>
         </article>
-        <article class="project-card">
-          <div class="project-number">03</div>
-          <div>
-            <h3>Southeast Alaska disturbance-carbon gradients</h3>
-            <p class="meta">Temperate rainforest systems · University of Colorado Denver · NSF-supported research</p>
-            <p>Field-collected vegetation and soil data evaluate how landslide and windstorm disturbance gradients influence biomass, soil conditions, disturbance history, and carbon stocks in high-density carbon temperate rainforest ecosystems.</p>
-          </div>
+
+        <article class="card">
+          <h3>Southeast Alaska disturbance-carbon research</h3>
+          <p>My master’s research examined how long-term landslide and windstorm disturbance regimes influence biomass, soils, terrain, and carbon stocks in temperate rainforest systems near Sitka, Alaska.</p>
+          <p>This work connects disturbance ecology with carbon-cycle questions in forests where rare but severe disturbance can reshape long-term carbon storage.</p>
         </article>
       </div>
     </section>
 
-    <section id="products" class="section-pad band">
+    <section id="outputs" class="section-pad band">
       <div class="section-heading narrow">
-        <p class="eyebrow">Manuscripts and products</p>
-        <h2>A publication pipeline built from ecological monitoring, theory, and synthesis.</h2>
-        <p class="note">Working titles are provisional and should be updated as manuscripts are submitted or accepted.</p>
+        <p class="eyebrow">Selected outputs</p>
+        <h2>Research products for public-land science, renewable-energy ecology, and field-based monitoring.</h2>
+        <p class="note">A full academic CV is available upon request. This page emphasizes public-facing research products, datasets, reports, and science communication.</p>
       </div>
+
       <div class="accordion-grid">
         <details open>
-          <summary>Active manuscript drafts</summary>
-          <ul class="pub-list">
-            <li><strong>Turchick, K., and Grodsky, S. M.</strong> <em>Advancing the heterogeneity-diversity paradigm: history, diagnosis, mediators, and applications.</em> Review manuscript in preparation; lead author.</li>
-            <li><strong>Turchick, K., and Grodsky, S. M.</strong> <em>Reshaping landmark heterogeneity-diversity relationships.</em> Brief communication manuscript in preparation; lead author.</li>
-            <li><strong>Turchick, K., Rodewald, A. D., and Grodsky, S. M.</strong> <em>Digging into the heterogeneity-diversity relationship across spatial scales and taxa.</em> Manuscript in preparation; lead author.</li>
-            <li><strong>Turchick, K., and Grodsky, S. M.</strong> <em>Disturbance weakens and reshapes the geodiversity-biodiversity relationship.</em> Manuscript in preparation; lead author.</li>
-            <li><strong>Sturchio, M. A., Turchick, K., Ohlert, T., and Grodsky, S. M.</strong> <em>Plant community structure across disturbance histories and photovoltaic-panel microsites at a Mojave Desert solar facility.</em> Manuscript in preparation; second author.</li>
-            <li><strong>Turchick, K., Vascik, B., Booth, A. M., and Buma, B.</strong> <em>Higher disturbance likelihood over millennia correlates with higher carbon stocks in low-frequency/high-density carbon temperate rainforests, with high variance.</em> Manuscript in preparation; lead author.</li>
-          </ul>
-        </details>
-        <details>
-          <summary>Yellow Pine monitoring-data pipeline</summary>
+          <summary>Technical reports and agency products</summary>
           <ul class="pub-list compact">
-            <li>Shrub community responses to utility-scale solar construction and natural disturbance in the Mojave Desert.</li>
-            <li>Perennial vegetation structure and recovery trajectories following utility-scale solar construction and debris-flow disturbance.</li>
-            <li>Annual plant responses to utility-scale solar construction and natural disturbance in Mojave Desert shrubland.</li>
-            <li>Native and introduced plant richness trajectories following solar-facility construction and debris-flow disturbance.</li>
-            <li>Burrow activity as an indicator of soil-faunal response to solar-facility construction and natural disturbance.</li>
-            <li>Woody debris redistribution following utility-scale solar construction and debris-flow disturbance.</li>
-            <li>Does disturbance alter the abiotic template? Geodiversity and soil-surface heterogeneity across mechanical and natural disturbance.</li>
-            <li>Biological soil crust responses to utility-scale solar construction, panel microsites, and natural disturbance.</li>
-            <li>Spatially explicit ecological monitoring of vegetation and soil-surface responses at the Yellow Pine Solar Facility.</li>
+            <li><strong>Yellow Pine Solar Project monitoring:</strong> annual technical reports, methods documentation, metadata, and ecological monitoring data products prepared for the Bureau of Land Management Las Vegas Field Office.</li>
+            <li><strong>BLM Southwest Colorado monitoring:</strong> eleven project-specific technical reports on ecosystem response to prescribed fire, natural fire, and mechanical vegetation treatments.</li>
           </ul>
         </details>
-        <details>
-          <summary>Technical reports and data products</summary>
-          <ul class="pub-list compact">
-            <li><strong>Yellow Pine Solar Project monitoring:</strong> annual technical reports, methods documentation, metadata, and ecological monitoring data products prepared for the BLM Las Vegas Field Office.</li>
-            <li><strong>BLM Southwest Colorado monitoring:</strong> eleven project-specific reports on ecosystem response to prescribed fire, natural fire, and mechanical treatments.</li>
-            <li><strong>Science communication:</strong> <em>The Silent Slide</em>, Planet Forward StoryFest; Sitka Nature Show podcast guest; Coastal Rainforest Margins Research Coordination Network blog spotlight.</li>
-          </ul>
-        </details>
-      </div>
-    </section>
 
-    <section id="experience" class="section-pad">
-      <div class="section-heading narrow">
-        <p class="eyebrow">Experience</p>
-        <h2>Research, agency monitoring, and field leadership.</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="date">2022-Present</span>
-          <div>
-            <h3>Graduate Research Assistant · Cornell University</h3>
-            <p>Lead dissertation research on heterogeneity-diversity relationships, renewable-energy ecology, and disturbance-mediated biodiversity patterns.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <span class="date">2021-2022</span>
-          <div>
-            <h3>Fuels, Emergency Stabilization, and Restoration Crew Lead · BLM Uncompahgre Field Office</h3>
-            <p>Monitored fuels reduction, prescribed-fire, mechanical treatment, seeding, and post-wildfire stabilization/restoration projects across southwest Colorado.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <span class="date">2018-2021</span>
-          <div>
-            <h3>Graduate Research Assistant · University of Colorado Denver</h3>
-            <p>Investigated links between long-term disturbance regimes, terrain, soil properties, and carbon stocks in southeast Alaska temperate rainforest systems.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <span class="date">2016-2017</span>
-          <div>
-            <h3>Research Assistant · Denali National Park and BLM Grand Junction</h3>
-            <p>Collected vegetation and soil data, supported public-land monitoring, and collaborated with NASA ABVE and interdisciplinary BLM teams.</p>
-          </div>
-        </article>
+        <details>
+          <summary>Research datasets and data products</summary>
+          <ul class="pub-list compact">
+            <li><strong>Yellow Pine Solar Facility ecological monitoring dataset:</strong> permanent-transect monitoring of vegetation, soils, biological soil crust, woody debris, burrows, geodiversity, and panel microsites in a Mojave Desert utility-scale solar landscape.</li>
+            <li><strong>Western U.S. geodiversity-biodiversity synthesis dataset:</strong> integrated public-land monitoring data, bird richness estimates, geodiversity metrics, and ecoregion frameworks.</li>
+            <li><strong>Southeast Alaska disturbance-carbon dataset:</strong> vegetation and soil data from landslide and windstorm disturbance gradients in temperate rainforest systems.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Science communication</summary>
+          <ul class="pub-list compact">
+            <li><em>The Silent Slide</em>, video essay published for Planet Forward StoryFest.</li>
+            <li>Sitka Nature Show podcast guest.</li>
+            <li>Student spotlight, Coastal Rainforest Margins Research Coordination Network blog.</li>
+          </ul>
+        </details>
       </div>
     </section>
 
@@ -204,19 +176,63 @@
         <p class="eyebrow">Methods portfolio</p>
         <h2>From transects to models.</h2>
       </div>
+
       <div class="method-columns">
         <div>
           <h3>Vegetation and biodiversity</h3>
           <p>Perennial and annual belt transects, line-intercept cover, species-richness inventories, demographic classes, flowering status, native/introduced richness, shrub structure, and vegetation response to disturbance.</p>
         </div>
+
         <div>
           <h3>Soils and surface conditions</h3>
           <p>Soil sampling, fuel loading, post-fire monitoring, rock clast-size cover, landform and slope-shape classification, biological soil crust, woody debris, burrow-belt surveys, and treatment-effectiveness monitoring.</p>
         </div>
+
         <div>
           <h3>Analysis and workflows</h3>
           <p>Mixed-effects models, model comparison, AIC/AICc, spatially balanced sampling, geodiversity metrics, richness metrics, ecoregion-based scale analysis, panel microsite classification, R workflows, and metadata development.</p>
         </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-pad">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Experience</p>
+        <h2>Research, agency monitoring, and field leadership.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="date">2022-Present</span>
+          <div>
+            <h3>Graduate Research Assistant · Cornell University</h3>
+            <p>Lead dissertation research on heterogeneity-diversity relationships, renewable-energy ecology, and disturbance-mediated biodiversity patterns.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="date">2021-2022</span>
+          <div>
+            <h3>Fuels, Emergency Stabilization, and Restoration Crew Lead · BLM Uncompahgre Field Office</h3>
+            <p>Monitored fuels reduction, prescribed-fire, mechanical treatment, seeding, and post-wildfire stabilization/restoration projects across southwest Colorado.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="date">2018-2021</span>
+          <div>
+            <h3>Graduate Research Assistant · University of Colorado Denver</h3>
+            <p>Investigated links between long-term disturbance regimes, terrain, soil properties, and carbon stocks in southeast Alaska temperate rainforest systems.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="date">2016-2017</span>
+          <div>
+            <h3>Research Assistant · Denali National Park and BLM Grand Junction</h3>
+            <p>Collected vegetation and soil data, supported public-land monitoring, and collaborated with NASA Arctic-Boreal Vulnerability Experiment and interdisciplinary BLM teams.</p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -225,6 +241,7 @@
         <p class="eyebrow">Teaching and communication</p>
         <h2>Applied environmental decision-making, biological statistics, and public science.</h2>
       </div>
+
       <div class="cards two">
         <article class="card">
           <h3>Teaching</h3>
@@ -235,6 +252,7 @@
             <li>Guest lectures on renewable-energy ecology, general ecology, peregrine falcons, and personal genomics.</li>
           </ul>
         </article>
+
         <article class="card">
           <h3>Selected presentations</h3>
           <ul class="plain-list">
@@ -252,8 +270,10 @@
       <div class="contact-card">
         <p class="eyebrow">Contact</p>
         <h2>For research collaboration, postdoctoral roles, agency science, or renewable-energy ecology work.</h2>
-        <p>Email is the best first route. A public CV PDF, Google Scholar, ORCID, GitHub, and LinkedIn links can be added here once available.</p>
+        <p>I am interested in postdoctoral, agency, research-scientist, and applied ecology roles related to renewable-energy ecology, disturbance ecology, biodiversity monitoring, restoration, public-land science, and geospatial ecological analysis.</p>
+        <p>Email is the best first route. CV available upon request. Links to public profiles and selected outputs will be added as they become available.</p>
         <p class="email-fallback">Email: <span id="email-text">kyle.turchick [at] gmail [dot] com</span></p>
+
         <div class="contact-actions">
           <a id="email-link" class="button primary" href="#">Email Kyle</a>
           <a class="button secondary" href="#home">Back to top</a>
@@ -263,8 +283,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Kyle Turchick. Built as a static website starter; edit freely.</p>
+    <p>&copy; <span id="year"></span> Kyle Turchick. Built as a static website.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
